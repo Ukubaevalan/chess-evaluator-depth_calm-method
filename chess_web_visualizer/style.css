@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 64px);
+  grid-template-rows: repeat(8, 64px);
+  border: 2px solid #333;
+}
+
+.square {
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+}
+
+.sidebar {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eval-bar {
+  width: 30px;
+  height: 512px;
+  background: linear-gradient(to top, black 50%, white 50%);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.eval-fill {
+  position: absolute;
+  width: 30px;
+}
+
+.fragility-bar {
+  width: 30px;
+  height: 512px;
+  background: #ddd;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.fragility-fill {
+  position: absolute;
+  bottom: 0;
+  background: #4285f4;
+  width: 30px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#info {
+  margin-top: 10px;
+  text-align: center;
+}
